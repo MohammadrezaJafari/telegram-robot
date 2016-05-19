@@ -1,0 +1,11 @@
+{
+    "name": "module/ui",
+    "description": "This package useful for rendering ui component",
+    "authors": [
+        {
+            "name": "MohammadrezaJafari",
+            "email": "mohammadreza.jafari89@gmail.com"
+        }
+    ],
+    "require": {}
+}

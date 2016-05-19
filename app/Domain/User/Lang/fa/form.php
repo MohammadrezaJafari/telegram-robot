@@ -1,0 +1,20 @@
+<?php
+return [
+    'First Name' => "نام",
+    'Last Name' => 'نام خانوادگی',
+    'Email' => 'ایمیل',
+    'Password' => 'رمز عبور',
+    'Product Title' => 'عنوان',
+    'Title' => 'عنوان',
+    'Summary' => 'خلاصه',
+    'Image' => 'تصویر',
+    'Submit' => 'تایید',
+    'Description' => 'توضیحات',
+    'Product Details' => 'جزییات محصول',
+    'Position' => "موقعیت صفحه",
+    'Page Title'=> 'عنوان صفحه',
+    'Add New User' => 'افزودن کاربر جدید',
+    'Add New Slide' => 'افزودن اسلاید جدید',
+    'Add New Image Gallery' => 'افزودن تصویر جدید',
+    'Image Title' => 'عنوان تصویر',
+];

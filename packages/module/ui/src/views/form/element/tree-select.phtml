@@ -1,0 +1,31 @@
+<?php
+$this->headScript()->appendFile(PUBLIC_PATH . '/assets/layout/js/selectTree.js')
+?>
+
+
+
+<?php if(isset($title)):?>
+    <div class="title">
+        <h2><?=$title?></h2>
+    </div>
+<?php endif;?>
+<?php if(count($services)>0):?>
+    <ul class="nav nav-list tree<?=(!isset($notFirst))?"view":""?>">
+        <?php foreach($services as $service):?>
+            <li  <?=(isset($selected) && $selected == $service["id"])?"class='selectedd'":""?>>
+                <?php if(count($service["childList"])>0):?>
+                    <label class="selectP tree-toggler nav-header" id="<?=$service["id"]?>"><i class="fa fa-folder-o"></i> <?=$service["label"]?></label>
+                    <?php echo $this->partial('ui/form/element/tree-select', array("services"=>$service["childList"],"notFirst"=>1)); ?>
+                <?php else:?>
+                    <a class="selectP" id="<?=$service["id"]?>"><?=$service["label"]?></a>
+                <?php endif;?>
+            </li>
+        <?php endforeach;?>
+    </ul>
+<?php endif;?>
+
+<?php if (!isset($notFirst)):?>
+    <input type="text" id="parenting" name="<?=$name?>" value="<?=$selected?>" style="display: none;">
+<?php endif;?>
+
+
