@@ -1,0 +1,5 @@
+@include('frontend.section.describe-us', [$describeUs])
+@include('frontend.section.welcome',[$welcome])
+@include('frontend.section.gallery',['images' => $images, 'main' => ''])
+@include('frontend.section.news', ['news' => $news, 'main' => ''])
+@include('frontend.section.map')

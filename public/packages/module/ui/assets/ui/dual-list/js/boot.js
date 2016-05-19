@@ -1,0 +1,1 @@
+$('.serviceSelecting').DualListBox();
